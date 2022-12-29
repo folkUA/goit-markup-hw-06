@@ -382,8 +382,6 @@ a.logo {
   letter-spacing: 0.01em;
 
   color: var(--color-light-slate);
-
- 
 }
 
 .form-field:not(:first-child) {
@@ -427,8 +425,6 @@ a.logo {
   color: var(--color-dark);
   --color1: currentColor;
   transition: color var(--anim-main);
-
-  
 }
 
 .modal-form .form-field:focus-within .form-field-icon {
@@ -525,8 +521,6 @@ textarea:focus {
   letter-spacing: 0.04em;
 
   color: var(--color-normal-grey);
-
- 
 }
 
 .form-field-checkbox .checkbox {
@@ -557,19 +551,19 @@ textarea:focus {
 }
 
 .checkbox-icon-svg {
+  transform: scale(1.5);
   opacity: 0;
-  transition: opacity var(--anim-main);
- 
+  transition: opacity var(--anim-main), transform var(--anim-main);
 }
 
 .checkbox:checked + .checkbox-icon {
   background-color: var(--color-primary-brand);
-  border-color: var(--color-primary-brand);
- 
+  border-color: transparent;
 }
 
 .checkbox:checked + .checkbox-icon > .checkbox-icon-svg {
   opacity: 1;
+  transform: scale(1.18);
 }
 
 .checkbox-link {
@@ -732,8 +726,6 @@ textarea:focus {
   display: flex;
 
   text-align: left;
-
-
 }
 
 .footer-thumb {
@@ -753,8 +745,6 @@ textarea:focus {
   margin-left: 120px;
   width: 208px;
   height: 80px;
-
-  
 }
 
 .footer-soc-title.description,
@@ -800,14 +790,11 @@ textarea:focus {
 
   margin-left: 80px;
   height: 80px;
-  
 }
 
 .footer-form {
   display: flex;
   flex-direction: column;
-
- 
 }
 
 .footer-field-area {
@@ -847,8 +834,6 @@ textarea:focus {
 
   background-color: var(--color-primary-brand);
   color: var(--color-primary-white);
-
-  
 }
 
 .footer-sub-icon {
@@ -857,8 +842,6 @@ textarea:focus {
   width: 24px;
   height: 20px;
   fill: currentColor;
-
- 
 }
 
 /* ---Portfolio.html stylesheet--- */
